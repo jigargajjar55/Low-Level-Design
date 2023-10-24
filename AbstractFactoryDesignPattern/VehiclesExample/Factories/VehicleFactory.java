@@ -1,6 +1,6 @@
-package AbstractFactoryDesignPattern.Factories;
+package AbstractFactoryDesignPattern.VehiclesExample.Factories;
 
-import AbstractFactoryDesignPattern.Vehicles.*;
+import AbstractFactoryDesignPattern.VehiclesExample.Vehicles.*;
 
 public interface VehicleFactory {
 

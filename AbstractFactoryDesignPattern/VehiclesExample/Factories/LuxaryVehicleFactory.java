@@ -1,10 +1,10 @@
-package AbstractFactoryDesignPattern.Factories;
+package AbstractFactoryDesignPattern.VehiclesExample.Factories;
 
-import AbstractFactoryDesignPattern.Vehicles.*;
+import AbstractFactoryDesignPattern.VehiclesExample.Vehicles.*;
 
-public class OrdinaryVehicleFactory implements VehicleFactory {
+public class LuxaryVehicleFactory implements VehicleFactory {
 
-    String[] vehicleModels = { "Swift", "Hyundai" };
+    String[] vehicleModels = { "Mercedes", "BMW" };
 
     @Override
     public void getListOfVehicles() {
@@ -21,16 +21,17 @@ public class OrdinaryVehicleFactory implements VehicleFactory {
     public Vehicle getVehicle(String vehString) {
 
         switch (vehString) {
-            case "Swift": {
-                return new Swift();
-            }
 
-            case "Hyundai": {
-                return new Hyundai();
+            case "Mercedes": {
+                return new Mercedes();
+            }
+            case "BMW": {
+                return new BMW();
             }
             default: {
                 return null;
             }
         }
     }
+
 }

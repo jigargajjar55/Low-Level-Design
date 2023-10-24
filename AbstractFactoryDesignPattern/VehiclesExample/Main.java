@@ -1,10 +1,10 @@
-package AbstractFactoryDesignPattern;
+package AbstractFactoryDesignPattern.VehiclesExample;
 
 import java.util.Scanner;
 
-import AbstractFactoryDesignPattern.Factories.FactoryOfVehicleFactory;
-import AbstractFactoryDesignPattern.Factories.VehicleFactory;
-import AbstractFactoryDesignPattern.Vehicles.Vehicle;
+import AbstractFactoryDesignPattern.VehiclesExample.Factories.FactoryOfVehicleFactory;
+import AbstractFactoryDesignPattern.VehiclesExample.Factories.VehicleFactory;
+import AbstractFactoryDesignPattern.VehiclesExample.Vehicles.Vehicle;
 
 
 //Abstract Factory Pattern

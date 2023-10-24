@@ -1,4 +1,4 @@
-package AbstractFactoryDesignPattern.Factories;
+package AbstractFactoryDesignPattern.VehiclesExample.Factories;
 
 public class FactoryOfVehicleFactory {
 
