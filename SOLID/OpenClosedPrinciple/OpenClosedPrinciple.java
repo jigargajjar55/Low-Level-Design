@@ -1,6 +1,6 @@
-package SOLID;
+package SOLID.OpenClosedPrinciple;
 
-import SOLID.SingleResponsibilityPrinciple.Invoice;
+import SOLID.SingleResponsibilityPrinciple.SingleResponsibilityPrinciple.Invoice;
 
 //O :- Open/Closed Principle
 // Open for Extension but Closed for Modification

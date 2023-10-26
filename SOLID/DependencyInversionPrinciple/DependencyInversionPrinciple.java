@@ -1,4 +1,4 @@
-package SOLID;
+package SOLID.DependencyInversionPrinciple;
 
 //D :- Dependency Inversion Principle
 //Class should depends on interfaces rather than concrete Class.

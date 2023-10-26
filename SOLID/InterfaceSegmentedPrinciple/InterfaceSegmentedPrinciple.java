@@ -1,4 +1,4 @@
-package SOLID;
+package SOLID.InterfaceSegmentedPrinciple;
 
 //I :- Interfaces Segmented Principle
 //Interfaces should be such that class should not implement unnecessary functions they do not need

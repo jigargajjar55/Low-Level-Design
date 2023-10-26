@@ -1,4 +1,4 @@
-package SOLID;
+package SOLID.SingleResponsibilityPrinciple;
 
 //S :- Single Responsibility Principle
 //A Class should have only 1 reason to change
@@ -52,7 +52,7 @@ public class SingleResponsibilityPrinciple {
     // Each class have Single Responsiblity now
 
     // For Invoice calculation logic
-    class Invoice {
+    public class Invoice {
         // Inovice has a marker relationship. ('Has a')
         private Marker marker;
         private int quantity;
