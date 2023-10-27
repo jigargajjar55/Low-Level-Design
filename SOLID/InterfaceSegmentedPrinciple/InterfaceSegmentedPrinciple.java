@@ -3,6 +3,21 @@ package SOLID.InterfaceSegmentedPrinciple;
 //I :- Interfaces Segmented Principle
 //Interfaces should be such that class should not implement unnecessary functions they do not need
 
+/*
+
+Signs of Interface Pollution
+
+- Classes have empty method implementations
+- Method implementations throw UnsupportedOperationException (or similar)
+- Method implementations return null or default/dummy values
+
+
+
+
+*/
+
+
+
 public class InterfaceSegmentedPrinciple {
 
     //This example contain one interface which have 3 methods.

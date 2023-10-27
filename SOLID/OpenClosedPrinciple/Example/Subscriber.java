@@ -42,7 +42,7 @@ public abstract class Subscriber {
         this.baseRate = baseRate;
     }
 
-    public abstract double calculateBill();
+    public abstract double calculateBill(); //extension
 
     
 
