@@ -1,4 +1,4 @@
-package FactoryDesignPattern.ShapeFactoryExample;
+package SimpleFactoryDesignPattern.ShapeFactoryExample;
 
 //Factory Pattern
 

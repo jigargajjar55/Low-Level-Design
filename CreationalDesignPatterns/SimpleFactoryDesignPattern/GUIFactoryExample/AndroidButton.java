@@ -1,4 +1,4 @@
-package FactoryDesignPattern.GUIFactoryExample;
+package SimpleFactoryDesignPattern.GUIFactoryExample;
 
 public class AndroidButton implements Button {
 
