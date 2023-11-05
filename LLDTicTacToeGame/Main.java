@@ -1,4 +1,4 @@
-package LLDInterviewQuestions.TicTacToeGame;
+package LLDTicTacToeGame;
 
 import java.util.Scanner;
 

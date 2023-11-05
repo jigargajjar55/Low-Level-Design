@@ -1,4 +1,4 @@
-package LLDInterviewQuestions.TicTacToeGame.Model;
+package LLDTicTacToeGame.Model;
 
 public class PlayingPieceX extends PlayingPiece {
 

@@ -1,13 +1,13 @@
-package LLDInterviewQuestions.TicTacToeGame;
+package LLDTicTacToeGame;
 
 import java.util.*;
 
-import LLDInterviewQuestions.TicTacToeGame.Model.Board;
-import LLDInterviewQuestions.TicTacToeGame.Model.PieceType;
-import LLDInterviewQuestions.TicTacToeGame.Model.Player;
-import LLDInterviewQuestions.TicTacToeGame.Model.PlayingPiece;
-import LLDInterviewQuestions.TicTacToeGame.Model.PlayingPieceO;
-import LLDInterviewQuestions.TicTacToeGame.Model.PlayingPieceX;
+import LLDTicTacToeGame.Model.Board;
+import LLDTicTacToeGame.Model.PieceType;
+import LLDTicTacToeGame.Model.Player;
+import LLDTicTacToeGame.Model.PlayingPiece;
+import LLDTicTacToeGame.Model.PlayingPieceO;
+import LLDTicTacToeGame.Model.PlayingPieceX;
 
 public class TicTacToeGame {
 
