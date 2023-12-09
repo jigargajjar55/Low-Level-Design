@@ -1,7 +1,7 @@
 package StructuralDesignPatterns.DecoratorDesignPattern.PizzaOrderingSystem.BasePizzas;
 
-public abstract class BasePizza {
+public interface BasePizza {
 
-    public abstract int cost();
+    public int cost();
     
 }

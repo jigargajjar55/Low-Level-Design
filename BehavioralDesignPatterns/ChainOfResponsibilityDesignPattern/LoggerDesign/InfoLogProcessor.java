@@ -7,13 +7,13 @@ public class InfoLogProcessor extends LogProcessor{
         super(nextLogProcessor);
     }
 
-    public void log(int logLevel, String message){
+    public void log(LogType logtype, String message){
 
-        if(logLevel == INFO){
+        if(logtype == LogType.INFO){
             System.out.println(message);
         }else{
 
-            super.log(logLevel, message);
+            super.log(logtype, message);
         }
     }
     
