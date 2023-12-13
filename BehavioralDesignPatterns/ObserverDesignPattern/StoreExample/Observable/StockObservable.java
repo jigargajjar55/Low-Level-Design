@@ -1,6 +1,6 @@
-package ObserverDesignPattern.Observable;
+package ObserverDesignPattern.StoreExample.Observable;
 
-import ObserverDesignPattern.Observer.NotificationAlertObserver;
+import ObserverDesignPattern.StoreExample.Observer.NotificationAlertObserver;
 
 public interface StockObservable {
 

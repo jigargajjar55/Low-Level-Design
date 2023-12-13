@@ -1,18 +1,21 @@
-package ObserverDesignPattern.Observable;
-import ObserverDesignPattern.Observer.NotificationAlertObserver;
+package ObserverDesignPattern.StoreExample.Observable;
+
+import ObserverDesignPattern.StoreExample.Observer.NotificationAlertObserver;
 
 import java.util.List;
 import java.util.ArrayList;
 
-public class IphoneObservableImpl implements StockObservable {
+public class MixerObservableImpl implements StockObservable{
 
     public List<NotificationAlertObserver> observerList;
     public int stockCount;
 
-    public IphoneObservableImpl(){
+    public MixerObservableImpl(){
         observerList = new ArrayList<>();
         stockCount = 0;
     }
+
+
 
     @Override
     public void add(NotificationAlertObserver observer) {
@@ -25,6 +28,7 @@ public class IphoneObservableImpl implements StockObservable {
         observerList.remove(observer);
         
     }
+
     
 
     @Override
@@ -34,19 +38,18 @@ public class IphoneObservableImpl implements StockObservable {
             observer.update();
         }
         
-    } 
+    }
+
+    
 
     @Override
     public void setStockCount(int newStockCount) {
-        
+
         stockCount += newStockCount;
-        
+
         if(stockCount == 0){
             notifySubscribers();
-        }
-
-        
-        
+        }        
         
     }
 
@@ -56,10 +59,8 @@ public class IphoneObservableImpl implements StockObservable {
         return stockCount;
     }
 
+
+
     
-
-
-
-
     
 }
