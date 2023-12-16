@@ -1,6 +1,6 @@
 package StructuralDesignPatterns.DecoratorDesignPattern.CarShop.BaseCars;
 
-public class TataNexon extends BaseCars {
+public class TataNexon implements BaseCars {
 
     @Override
     public int cost(){

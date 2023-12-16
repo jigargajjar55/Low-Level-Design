@@ -1,7 +1,7 @@
 package StructuralDesignPatterns.DecoratorDesignPattern.CarShop.BaseCars;
 
-public abstract class BaseCars {
+public interface BaseCars {
 
-    public abstract int cost();
+    public int cost();
     
 }

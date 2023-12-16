@@ -2,7 +2,7 @@ package StructuralDesignPatterns.DecoratorDesignPattern.CarShop.Decorators;
 
 import StructuralDesignPatterns.DecoratorDesignPattern.CarShop.BaseCars.BaseCars;
 
-public class SeatCover extends FunctionalityDecorators {
+public class SeatCover implements FunctionalityDecorators {
 
     BaseCars baseCars;
 

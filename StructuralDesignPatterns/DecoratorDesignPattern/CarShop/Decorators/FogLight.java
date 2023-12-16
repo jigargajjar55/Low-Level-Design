@@ -2,7 +2,7 @@ package StructuralDesignPatterns.DecoratorDesignPattern.CarShop.Decorators;
 
 import StructuralDesignPatterns.DecoratorDesignPattern.CarShop.BaseCars.BaseCars;
 
-public class FogLight extends FunctionalityDecorators {
+public class FogLight implements FunctionalityDecorators {
 
     BaseCars baseCars;
 

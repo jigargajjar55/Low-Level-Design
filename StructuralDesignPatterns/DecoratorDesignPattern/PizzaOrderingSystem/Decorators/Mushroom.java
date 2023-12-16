@@ -2,7 +2,7 @@ package StructuralDesignPatterns.DecoratorDesignPattern.PizzaOrderingSystem.Deco
 
 import StructuralDesignPatterns.DecoratorDesignPattern.PizzaOrderingSystem.BasePizzas.BasePizza;
 
-public class Mushroom extends ToppingDecorator{
+public class Mushroom implements ToppingDecorator{
 
     BasePizza basePizza;
 

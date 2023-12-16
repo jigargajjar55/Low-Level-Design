@@ -2,7 +2,7 @@ package StructuralDesignPatterns.DecoratorDesignPattern.CarShop.Decorators;
 
 import StructuralDesignPatterns.DecoratorDesignPattern.CarShop.BaseCars.BaseCars;
 
-public class AC extends FunctionalityDecorators{
+public class AC implements FunctionalityDecorators{
 
     BaseCars baseCars;
 

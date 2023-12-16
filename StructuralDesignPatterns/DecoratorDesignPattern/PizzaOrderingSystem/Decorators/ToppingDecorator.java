@@ -2,7 +2,7 @@ package StructuralDesignPatterns.DecoratorDesignPattern.PizzaOrderingSystem.Deco
 
 import StructuralDesignPatterns.DecoratorDesignPattern.PizzaOrderingSystem.BasePizzas.BasePizza;
 
-public abstract class ToppingDecorator implements BasePizza{
+public interface ToppingDecorator extends BasePizza{
     
     
 }
