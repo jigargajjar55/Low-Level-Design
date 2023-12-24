@@ -1,4 +1,4 @@
-package LLDTicTacToeGame;
+package LLDTicTacToeGame.Controller;
 
 import java.util.*;
 

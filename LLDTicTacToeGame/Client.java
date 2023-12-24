@@ -2,7 +2,9 @@ package LLDTicTacToeGame;
 
 import java.util.Scanner;
 
-public class Main {
+import LLDTicTacToeGame.Controller.TicTacToeGame;
+
+public class Client {
 
     public static void main(String[] args) {
 
