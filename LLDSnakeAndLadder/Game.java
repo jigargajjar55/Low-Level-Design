@@ -13,7 +13,7 @@ public class Game {
 
     public Game(){
         this.boardDimension = 10;
-        this.board = new Board(10, 5, 4);
+        this.board = new Board(10, 8, 8);
         this.dice = new Dice(2, 1, 6);
         this.playerList = new ArrayDeque<>();
         addAllPlayers();
@@ -38,6 +38,8 @@ public class Game {
 
             int diceNumbers = dice.rollDice();
             int newPosition = currentPosition + diceNumbers;
+            System.out.println("player " + currentPlayer.getPlayerName() + " new position after roll Dice is: " + newPosition);
+
 
             newPosition = board.jumpCheck(newPosition);
             currentPlayer.setCurrentPosition(newPosition);
@@ -45,6 +47,9 @@ public class Game {
             if(newPosition >= (boardDimension * boardDimension) - 1){
                 winner = currentPlayer;
             }
+
+            System.out.println("player " + currentPlayer.getPlayerName() + " new position is: " + newPosition);
+            System.out.println();
         }
         System.out.println("WINNER IS: " + winner.getPlayerName());
     }

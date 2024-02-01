@@ -12,8 +12,8 @@ public class Board {
         this.boardDimension = boardDimension;
         this.cells = new Cell[boardDimension][boardDimension];
 
-        for(int i=0; i<boardDimension; i++){
-            for(int j=0; j<boardDimension; j++){
+        for (int i = 0; i < boardDimension; i++) {
+            for (int j = 0; j < boardDimension; j++) {
                 Cell cell = new Cell();
                 cells[i][j] = cell;
             }
@@ -33,8 +33,14 @@ public class Board {
                 continue;
             }
 
-            Jump snakeObj = new Jump(snakeHead, snakeTail);
             Cell cell = getCell(snakeHead);
+
+            if (cell.getJump() != null) {
+                continue;
+            }
+
+            Jump snakeObj = new Jump(snakeHead, snakeTail);
+
             cell.setJump(snakeObj);
             noOfSnakes--;
         }
@@ -48,8 +54,14 @@ public class Board {
                 continue;
             }
 
-            Jump ladderObj = new Jump(ladderHead, ladderTail);
             Cell cell = getCell(ladderHead);
+
+            if (cell.getJump() != null) {
+                continue;
+            }
+
+            Jump ladderObj = new Jump(ladderHead, ladderTail);
+
             cell.setJump(ladderObj);
             noOfLadders--;
 
@@ -76,7 +88,7 @@ public class Board {
         Jump currJump = currCell.getJump();
 
         if (currJump != null && currJump.start == cellNumber) {
-            String jumpBy = (currJump.start < currJump.end)? "ladder" : "snake";
+            String jumpBy = (currJump.start < currJump.end) ? "ladder" : "snake";
             System.out.println("jump done by: " + jumpBy);
 
             return currJump.end;
