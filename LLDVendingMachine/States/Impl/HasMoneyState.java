@@ -19,8 +19,8 @@ public class HasMoneyState extends State {
 
     @Override
     public void clickOnCancelButton(VendingMachine vendingMachine) throws Exception{
-        vendingMachine.setCurrentState(new CancelState());
-        vendingMachine.getCurrentState().refundFullMoney(vendingMachine);
+        vendingMachine.setCurrentState(new CancelState(vendingMachine));
+        
 
     }
 

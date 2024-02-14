@@ -1,7 +1,6 @@
 package LLDVendingMachine.States;
 
 import LLDVendingMachine.VendingMachine;
-import LLDVendingMachine.States.Impl.CancelState;
 
 public abstract class State {
 

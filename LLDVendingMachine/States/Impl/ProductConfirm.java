@@ -14,9 +14,9 @@ public class ProductConfirm extends State {
                     + vendingMachine.getSelectedItemShelf().getItem().getPrice() + " and you paid: "
                     + vendingMachine.getInsertedCash());
 
-            vendingMachine.setCurrentState(new CancelState());
+            vendingMachine.setCurrentState(new CancelState(vendingMachine));
 
-            vendingMachine.getCurrentState().refundFullMoney(vendingMachine);
+        
 
         } else {
             vendingMachine.getInventory().updateSoldOutItem(vendingMachine.getSelectedItemShelf().getShelfCode());
