@@ -3,7 +3,7 @@ package LLDApplyCoupons.Decorator;
 import LLDApplyCoupons.Product;
 
 
-public class PercentageCouponDecorator extends CouponDecorator {
+public class PercentageCouponDecorator implements CouponDecorator {
 
     Product product;
     double discountPercentage;

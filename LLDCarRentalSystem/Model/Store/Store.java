@@ -2,8 +2,6 @@ package LLDCarRentalSystem.Model.Store;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-
 import LLDCarRentalSystem.Model.Location;
 import LLDCarRentalSystem.Model.Reservation.Reservation;
 import LLDCarRentalSystem.Model.User;

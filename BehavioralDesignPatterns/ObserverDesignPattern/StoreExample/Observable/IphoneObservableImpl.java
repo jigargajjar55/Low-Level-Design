@@ -41,7 +41,7 @@ public class IphoneObservableImpl implements StockObservable {
         
         stockCount += newStockCount;
         
-        if(stockCount == 0){
+        if(stockCount > 0){
             notifySubscribers();
         }
 

@@ -5,7 +5,7 @@ import java.util.*;
 import LLDApplyCoupons.Product;
 import LLDApplyCoupons.ProductType;
 
-public class TypeCouponDecorator extends CouponDecorator {
+public class TypeCouponDecorator implements CouponDecorator {
 
     Product product;
     double discountPercentage;
