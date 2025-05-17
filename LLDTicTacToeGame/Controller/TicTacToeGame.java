@@ -78,7 +78,7 @@ public class TicTacToeGame {
 
                 players.addLast(playerTurn);
 
-                boolean isWinner = isThereWinner(inputRow, inputColumn, playerTurn.playingPiece.pieceType);
+                boolean isWinner = gameBoard.isThereWinner(inputRow, inputColumn, playerTurn.playingPiece.pieceType);
                 if (isWinner) {
                     gameBoard.printBoard();
                     return playerTurn.getName();
@@ -95,51 +95,5 @@ public class TicTacToeGame {
         return "tie";
     }
 
-    private boolean isThereWinner(int row, int col, PieceType pieceType) {
-
-        boolean isRowMatch = true;
-        boolean isColMatch = true;
-        boolean isDiagonalMatch = true;
-        boolean isAntiDiagonalMatch = true;
-
-        int size = this.gameBoard.size;
-
-        // Need to check in row
-        for (int i = 0; i < size; i++) {
-            if (this.gameBoard.board[row][i] == null || this.gameBoard.board[row][i].pieceType != pieceType) {
-                isRowMatch = false;
-                break;
-            }
-        }
-
-        // Need to check in column
-        for (int i = 0; i < size; i++) {
-            if (this.gameBoard.board[i][col] == null || this.gameBoard.board[i][col].pieceType != pieceType) {
-                isColMatch = false;
-                break;
-            }
-        }
-
-        // Need to check in Diagonal
-        for (int i = 0; i < size; i++) {
-
-            if (this.gameBoard.board[i][i] == null || this.gameBoard.board[i][i].pieceType != pieceType) {
-                isDiagonalMatch = false;
-                break;
-            }
-        }
-
-        // Need to check in Anti-Diagonal
-        for (int i = 0; i < size; i++) {
-
-            if (this.gameBoard.board[size - i - 1][size - i - 1] == null
-                    || this.gameBoard.board[size - i - 1][size - i - 1].pieceType != pieceType) {
-                isAntiDiagonalMatch = false;
-                break;
-            }
-        }
-
-        return (isRowMatch || isColMatch || isDiagonalMatch || isAntiDiagonalMatch);
-    }
-
+   
 }

@@ -57,4 +57,50 @@ public class Board {
 
     }
 
+    public boolean isThereWinner(int row, int col, PieceType pieceType) {
+
+        boolean isRowMatch = true;
+        boolean isColMatch = true;
+        boolean isDiagonalMatch = true;
+        boolean isAntiDiagonalMatch = true;
+
+        // Need to check in row
+        for (int i = 0; i < size; i++) {
+            if (board[row][i] == null || board[row][i].pieceType != pieceType) {
+                isRowMatch = false;
+                break;
+            }
+        }
+
+        // Need to check in column
+        for (int i = 0; i < size; i++) {
+            if (board[i][col] == null || board[i][col].pieceType != pieceType) {
+                isColMatch = false;
+                break;
+            }
+        }
+
+        // Need to check in Diagonal
+        for (int i = 0; i < size; i++) {
+
+            if (board[i][i] == null || board[i][i].pieceType != pieceType) {
+                isDiagonalMatch = false;
+                break;
+            }
+        }
+
+        // Need to check in Anti-Diagonal
+        for (int i = 0; i < size; i++) {
+
+            if (board[size - i - 1][size - i - 1] == null
+                    || board[size - i - 1][size - i - 1].pieceType != pieceType) {
+                isAntiDiagonalMatch = false;
+                break;
+            }
+        }
+
+        return (isRowMatch || isColMatch || isDiagonalMatch || isAntiDiagonalMatch);
+    }
+
+
 }
