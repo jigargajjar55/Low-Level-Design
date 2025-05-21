@@ -2,5 +2,5 @@ package StructuralDesignPatterns.CompositeDesignPattern.Solution1WithCompositeDe
 
 public interface FileSystem {
     
-    public void ls();
+    public void ls(int depth);
 }

@@ -7,7 +7,7 @@ public class File implements FileSystem {
         this.fileName = fileName;
     }
 
-    public void ls() {
-        System.out.println("File name is: " + this.fileName);
+    public void ls(int depth) {
+        System.out.println("  ".repeat(depth) + "File: " + this.fileName);
     }
 }

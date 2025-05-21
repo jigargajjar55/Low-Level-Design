@@ -18,12 +18,12 @@ public class Directory implements FileSystem {
     }
 
     @Override
-    public void ls() {
+    public void ls(int depth) {
 
-        System.out.println("Directory Name: " + directoryName);
+        System.out.println(" ".repeat(depth) + "Dir: "  + directoryName);
 
         for (FileSystem files : fileSystemList) {
-            files.ls();
+            files.ls(depth + 1);
         }
 
     }

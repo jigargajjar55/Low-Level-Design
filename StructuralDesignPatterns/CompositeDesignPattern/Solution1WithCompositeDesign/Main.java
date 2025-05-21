@@ -4,19 +4,28 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Directory movieDirectory = new Directory("Movie");
+        Directory rootMovieDirectory = new Directory("\\");
 
-        File border = new File("Border");
-        movieDirectory.add(border);
+        //File border = new File("Border");
+        //rootMovieDirectory.add(border);
 
         Directory comedyMovieDir = new Directory("Comedy Movie");
         File hulchul = new File("HulChul");
 
         comedyMovieDir.add(hulchul);
 
-        movieDirectory.add(comedyMovieDir);
+        rootMovieDirectory.add(comedyMovieDir);
 
-        movieDirectory.ls();
+
+
+        Directory horrerMovieDir = new Directory("Horrer Movie");
+        File Bhootnath = new File("Bhootnath");
+        horrerMovieDir.add(Bhootnath);
+
+
+        rootMovieDirectory.add(horrerMovieDir);
+
+        rootMovieDirectory.ls(0);
 
     }
 }

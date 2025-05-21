@@ -24,10 +24,10 @@ public class TicTacToeGame {
 
         // For 2 Players
         PlayingPiece crossPiece = new PlayingPieceX();
-        Player player1 = new Player("Player 1", crossPiece);
+        Player player1 = new Player("Player 1", crossPiece,sizeOfBoard);
 
         PlayingPiece noughtsPiece = new PlayingPieceO();
-        Player player2 = new Player("Player 2", noughtsPiece);
+        Player player2 = new Player("Player 2", noughtsPiece,sizeOfBoard);
 
         players.add(player1);
         players.add(player2);
@@ -78,7 +78,7 @@ public class TicTacToeGame {
 
                 players.addLast(playerTurn);
 
-                boolean isWinner = gameBoard.isThereWinner(inputRow, inputColumn, playerTurn.playingPiece.pieceType);
+                boolean isWinner = playerTurn.isWinner(inputRow, inputColumn);
                 if (isWinner) {
                     gameBoard.printBoard();
                     return playerTurn.getName();
