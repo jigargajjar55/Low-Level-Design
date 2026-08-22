@@ -47,7 +47,7 @@ public class Player {
             diagonalCheck[row] += 1;
         }
 
-        if ((row + col) == sizeOfBoard) {
+        if ((row + col) == sizeOfBoard-1) {
             antiDiagonalCheck[row] += 1;
         }
 

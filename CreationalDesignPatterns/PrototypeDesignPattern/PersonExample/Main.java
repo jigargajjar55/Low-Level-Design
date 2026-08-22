@@ -4,19 +4,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Student obj = new Student(1, "Jigar", 24);
+        PersonPrototype obj = new Student(1, "Jigar", 24);
 
         System.out.println(obj.toString());
 
-        Student cloneObj = (Student) obj.clone();
+        PersonPrototype cloneObj = obj.clone();
 
         System.out.println(cloneObj.toString());
 
-        Employee obj1 = new Employee(129,"Neel",22, 223003240);
+        PersonPrototype obj1 = new Employee(129,"Neel",22, 223003240);
 
         System.out.println(obj1.toString());
 
-        Employee cloneObj1 = (Employee)obj1.clone();
+        PersonPrototype cloneObj1 = obj1.clone();
 
         System.out.println(cloneObj1.toString());
 

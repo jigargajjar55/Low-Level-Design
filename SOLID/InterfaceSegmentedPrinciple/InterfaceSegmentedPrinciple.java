@@ -11,9 +11,6 @@ Signs of Interface Pollution
 - Method implementations throw UnsupportedOperationException (or similar)
 - Method implementations return null or default/dummy values
 
-
-
-
 */
 
 
